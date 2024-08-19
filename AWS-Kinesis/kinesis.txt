@@ -1,0 +1,24 @@
+
+What is an Event-Driven Platform?
+
+An event-driven platform is a software architecture paradigm that centers around the production, detection, consumption, and reaction to events. An "event" is any significant change in state or occurrence within a system, such as a user clicking a button, a sensor detecting a temperature change, or a payment transaction being completed.
+
+Key Concepts of Event-Driven Architecture (EDA):
+Events:
+
+An event is a record of something that happened within the system. It is usually immutable (cannot be changed) and contains data about the event (e.g., timestamp, event type, relevant data).
+
+Producers:
+Also known as "event emitters," these are components or services that generate and send events. For example, a payment gateway service might generate an event when a payment is processed.
+
+Consumers:
+Also known as "event listeners," these are components or services that consume and respond to events. For instance, an inventory service might listen for a "purchase completed" event and update stock levels accordingly.
+
+Event Brokers:
+An event broker is an intermediary that routes events from producers to consumers. It ensures that events are delivered to the appropriate consumers based on predefined rules or topics. Solace PubSub+ is an example of an event broker.
+
+Asynchronous Communication:
+In an event-driven architecture, communication is usually asynchronous, meaning the producer does not wait for the consumer to process the event. This leads to more responsive and scalable systems, as components operate independently and react to events as they occur.
+
+Event Stream Processing:
+Some event-driven platforms provide the capability to process streams of events in real-time, applying transformations, aggregations, or filtering before forwarding the events to consumers.
