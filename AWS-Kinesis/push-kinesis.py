@@ -1,3 +1,5 @@
+#https://alpharm.hashnode.dev/processing-real-time-weather-data-with-aws-kinesis-and-lambda-storing-in-s3-and-monitoring-with-cloudwatch
+
 import boto3
 import random
 import time
